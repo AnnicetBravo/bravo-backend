@@ -26,18 +26,7 @@ const JEEL_CONFIG = {
 };
 
 // ─── CORS : autoriser uniquement business.jeko.africa ───────────────────────
-const allowedOrigins = [
-  'https://business.jeko.africa',
-  'http://localhost:3000',
-  'http://127.0.0.1:5500',  // Live Server pour dev local
-];
-app.use(cors({
-  origin: (origin, cb) => {
-    // Autoriser les requêtes sans origin (Postman, server-to-server)
-    if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
-    cb(new Error(`CORS bloqué pour l'origine : ${origin}`));
-  }
-}));
+app.use(cors());
 
 // ─── Servir les fichiers statiques du PWA ───────────────────────────────────
 app.use(express.static(path.join(__dirname)));
