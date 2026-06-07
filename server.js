@@ -22,7 +22,7 @@ const JEEL_CONFIG = {
   apiKey        : process.env.JEEL_API_KEY        || 'jeko_f70fbdff8b2818643e85f1be4926f2554465ef2be1910c39f96653684e14d552',
   webhookSecret : process.env.JEEL_WEBHOOK_SECRET || 'b44c0c278beab8b3717d13028b9395f269fa2a6c870f856746407847634c6c3b',
   entityId      : process.env.JEEL_ENTITY_ID      || '4a2ba0a5-40de-4e00-830e-b03cc5af1223',
-  baseUrl       : 'https://api.sandbox.jeel.co',   // ← remplacer par https://api.jeel.co en production
+  baseUrl       : 'https://api.jeel.co',   // ← remplacer par https://api.jeel.co en production
 };
 
 // ─── CORS : autoriser uniquement business.jeko.africa ───────────────────────
